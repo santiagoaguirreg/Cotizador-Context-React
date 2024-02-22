@@ -1,6 +1,6 @@
 import { Fragment, useCallback, useMemo, useRef } from 'react'
 import useCotizador from "../hooks/useCotizador"
-import { MARCAS, PLANES } from '../constants'
+
 
 const Resultado = () => {
     const { resultado, datos } = useCotizador()
@@ -48,12 +48,12 @@ const Resultado = () => {
                 {plan}
             </p>
 
-            <Fragment>
+            
             <p className="my-2">
                 <span className="font-bold">Año del Auto: </span>
                 {year}
             </p>
-            </Fragment>
+            
 
             <p className="my-2 text-2xl">
                 <span className="font-bold">Total Cotización: </span>
